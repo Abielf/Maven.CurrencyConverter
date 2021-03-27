@@ -25,6 +25,10 @@ public enum CurrencyType {
     }
 
     public static CurrencyType getTypeOfCurrency(ConvertableCurrency currency) {
-        return null;
-    }
+        for (CurrencyType i:CurrencyType.values()){
+            if(i==currency.g()){
+                return i;
+            }
+        }
+    return UNIVERSAL_CURRENCY;}
 }

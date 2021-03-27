@@ -1,7 +1,6 @@
 package io.zipcoder.currencyconverterapplication;
 
 public interface ConvertableCurrency {
-    default Double convert(CurrencyType currencyType) {
-        return Double.MAX_VALUE;
-    }
+     public Double convert(CurrencyType currencyType);
+     public CurrencyType g();
 }
